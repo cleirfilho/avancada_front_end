@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus Links</title>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="imagens/logo.png" class="imagens-logo" alt="Logo MF" />
+      <span>Meus Favoritos</span>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- formulario para cadastrar meus favoritos -->
+    <div class="container">
+      <h3 class="text-center">Meus Favoritos</h3>
+      <form action="/">
+        <div class="grid">
+          <label for="favorito" class="form-label">digite o nome do site</label>
+          <input type="text" class="form-control" id="nome_favorito" placeholder="digite o nome do seu site"
+            aria-describedby="Meus favoritos" />
+          <label for="favorito" class="form-label">Digite a url do site:</label>
+          <input type="text" class="form-control" id="utl_favorito" placeholder="https://exemplo.com.br"
+            aria-describedby="Meus favoritos" />
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+      <div class="lista">
+        <!--  lista dos favoritos cadastrados -->
+        <h3 class="text-center">Lista dos meus Favoritos</h3>
+        <table class="table" id="tabela_lista" style="width: 100%">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome do site</th>
+              <th scope="col">Url do site</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- fim grd lista-->
+      <div class="secao">
+        <div class="sobre">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+          nam maxime dolore distinctio iusto repellendus totam, cupiditate est
+          placeat dolores quaerat. Quaerat, asperiores et dolores natus
+          quisquam quos officia impedit! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Minima id quidem exercitationem
+          quibusdam tenetur omnis dignissimos amet, voluptate et. Earum?
+        </div>
+        <div class="secao2">
+          <div class="video">
+            <iframe width="200" height="150" src="https://www.youtube.com/embed/zEi62PpFezU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="slide">
+            <p>imagem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim class contenier -->
+  </main>
+  <!-- fim main-->
+  <footer>
+    <span>SMF -Sistema meus favoritos</span>
+    <span>Suporte técnico: (68) 5555-5555 |
+      <a href="mailto:suporte.sgcm@ufac.br">suporte.smf@ufac.br</a></span>
+  </footer>
+</body>
+
+</html>
